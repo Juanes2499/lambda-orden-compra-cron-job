@@ -1,0 +1,24 @@
+{
+    "name": "Lambda-Orden-Compra-Cron-Job",
+    "version": "0.0.1",
+    "description": "",
+    "author": "",
+    "private": true,
+    "license": "UNLICENSED",
+    "scripts": {
+        "develop-in-local": "npm install",
+        "build-zip": "npm install && npx tsc && cd dist && zip -r ../aws-lambda-orden-compra-cron-job.zip . && cd .. && npm install --only=prod && zip -ur aws-lambda-orden-compra-cron-job.zip node_modules"
+    },
+    "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.535.0",
+        "@aws-sdk/client-sqs": "^3.535.0",
+        "@aws-sdk/lib-dynamodb": "^3.535.0",
+        "@aws-sdk/util-dynamodb": "^3.535.0",
+        "moment-timezone": "^0.5.45"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.136",
+        "@types/uuid": "^9.0.8",
+        "typescript": "^5.4.2"
+    }
+}
