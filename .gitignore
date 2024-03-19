@@ -1,4 +1,4 @@
 node_modules
 .DS_Store
 dist
-aws-lambda-domicilios-dlq.zip
+aws-lambda-orden-compra-cron-job.zip
